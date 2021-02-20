@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;600&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,3 +49,68 @@ table {
     border-spacing: 0;
 }
 /* CSS reset done*/
+
+/* variables */
+:root {
+    --font-raleway: "Raleway", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-indie: "Indie Flower", sans-serif;
+    --color-gradient: linear-gradient(90deg, #C72C76 0.17%, #B12BC7 100.17%);
+    --color-white: #F4F4F4;
+    --color-black: #3F4142;
+    --color-gray-light: #F4F4F4;
+    --color-gray-dark: #8D8D8D;
+    --opacity: 0.3;
+    --shadow-regular: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    --shadow-enhanced: filter: drop-shadow(0px -2px 8px rgba(0, 0, 0, 0.03)), drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    --container-width: 900px;
+}
+/* variables */
+
+/* general */
+body {
+    font-family: var(--font-raleway);
+    font-size: 16px;
+}
+
+.logo {
+    font-family: var(--font-indie);
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: var(--container-width);
+    border: 1px solid green;
+}
+/* general */
+
+/* navigation */
+#navbar {
+    height: 50px;
+    background: var(--color-gradient);
+    box-shadow: var(--shadow-regular);
+}
+
+.div-navbar-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links-left, .navbar-links-right {
+    display: inline-block;
+    font-size: 0.875;
+}
+
+.navbar-links-left li, .navbar-links-right li {
+    display: inline-block;
+    color: var(--color-white);
+}
+
+.navbar-links-left li {
+    margin-right: 65px;
+}
+
+.navbar-links-right li {
+    margin-left: 65px;
+}
+/* navigation */
