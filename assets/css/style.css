@@ -60,9 +60,10 @@ table {
     --color-black: #3F4142;
     --color-gray-light: #F4F4F4;
     --color-gray-dark: #8D8D8D;
-    --opacity: 0.3;
-    --shadow-regular: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
-    --shadow-enhanced: filter: drop-shadow(0px -2px 8px rgba(0, 0, 0, 0.03)), drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.05));
+    --shadow-regular: 0px 4px 8px 0px rgba(0,0,0,0.05);
+    --shadow-strong: 0px 4px 8px 0px rgba(0,0,0,0.10);
+    --shadow-enhanced: 0px 4px 8px 0px rgba(0,0,0,0.05), 0px -2px 8px 0px rgba(0,0,0,0.03);
+    --border-radius: 25px;
     --container-width: 900px;
 }
 /* variables */
@@ -71,6 +72,7 @@ table {
 body {
     font-family: var(--font-raleway);
     font-size: 16px;
+    color: var(--color-black);
 }
 
 .logo {
@@ -79,7 +81,23 @@ body {
 }
 
 .container {
-    /* max-width: var(--container-width); */
+    width: 900px;
+    margin: 0 auto;
+}
+
+.line-short {
+    border-bottom: 1px solid var(--color-gray-dark);
+    width: 70px;
+}
+
+.cta {
+    background: var(--color-gradient);
+    color: var(--color-white);
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 15px 55px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-strong);
 }
 /* general */
 
@@ -87,13 +105,10 @@ body {
 #navbar {
     height: 50px;
     background: var(--color-gradient);
-    box-shadow: var(--shadow-regular);
+    box-shadow: var(--shadow-strong);
     display: grid;
-}
-
-.container {
-    width: 900px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
 }
 
 .div-navbar-links {
@@ -104,7 +119,7 @@ body {
 
 .navbar-links-left, .navbar-links-right {
     display: inline-block;
-    font-size: 0.875;
+    font-size: 0.875rem;
 }
 
 .navbar-links-left li, .navbar-links-right li {
@@ -120,3 +135,46 @@ body {
     margin-left: 65px;
 }
 /* navigation */
+
+/* header */
+.header-content {
+    background-image: url("../images/img-background.png");
+    height: calc(100vh - 215px);
+    min-height: 515px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.h1-header {
+    font-family: var(--font-indie);
+    font-size: 6.25rem;
+}
+
+.p-header {
+    font-size: 1.5rem;
+}
+
+.p-header, .h1-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.header-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    height: 350px;
+    width: fit-content;
+    margin: auto;
+}
+
+.header-usp {
+    height: 265px;
+}
