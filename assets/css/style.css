@@ -79,8 +79,7 @@ body {
 }
 
 .container {
-    max-width: var(--container-width);
-    border: 1px solid green;
+    /* max-width: var(--container-width); */
 }
 /* general */
 
@@ -89,11 +88,18 @@ body {
     height: 50px;
     background: var(--color-gradient);
     box-shadow: var(--shadow-regular);
+    display: grid;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
 }
 
 .div-navbar-links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-links-left, .navbar-links-right {
