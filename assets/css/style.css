@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
+ul {
     list-style: none;
 }
 blockquote, q {
@@ -277,7 +277,10 @@ h2 {
 
 /* how it works */
 .div-how-it-works {
-    margin-bottom: 95px;
+    margin: 95px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-how-it-works {
@@ -307,5 +310,20 @@ h2 {
 
 .product-preview-price {
     font-weight: 600;
+}
+
+.div-product-review {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.li-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.li-explanation {
+    font-size: 0.875rem;
 }
 /* how it works */
