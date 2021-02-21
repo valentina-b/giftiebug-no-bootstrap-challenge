@@ -249,7 +249,7 @@ h2 {
     margin: 95px auto;
 }
 
-.div-content {
+.div-about-content {
     max-width: 700px;
     margin: auto;
 }
@@ -356,3 +356,15 @@ h2 {
     width: 70%;
 }
 /* why giftiebug */
+
+/* footer */
+footer {
+    background-image: url("../images/img-background.png");
+    min-height: 260px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
