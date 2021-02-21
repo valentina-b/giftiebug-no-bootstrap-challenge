@@ -104,12 +104,12 @@ h2 {
 }
 
 .line-short {
-    border-bottom: 1px solid var(--color-gray-dark);
+    border-bottom: 0.5px solid var(--color-gray-dark);
     width: 70px;
 }
 
 .line-long {
-    border-bottom: 1px solid var(--color-gray-dark);
+    border-bottom: 0.5px solid var(--color-gray-dark);
     max-width: var(--container-width);
 }
 
@@ -326,4 +326,20 @@ h2 {
 .li-explanation {
     font-size: 0.875rem;
 }
+
+.div-steps {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.div-steps>ol>li {
+    margin: 35px 0;
+}
+
+.div-steps>.line-short {
+    margin-top: 30px;
+}
+
 /* how it works */
