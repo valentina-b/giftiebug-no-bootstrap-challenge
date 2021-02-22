@@ -1,52 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;600&display=swap');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* CSS reset done*/
-
 /* variables */
 :root {
     --font-raleway: "Raleway", sans-serif;
@@ -79,6 +32,7 @@ h2 {
     font-size: 1.875rem;
     font-weight: 500;
     text-align: center;
+    line-height: 140%;
 }
 
 .m-auto {
@@ -152,7 +106,6 @@ h2 {
 }
 
 .navbar-links-left, .navbar-links-right {
-    display: inline-block;
     font-size: 0.875rem;
     display: flex;
 }
@@ -388,3 +341,93 @@ footer {
     justify-content: space-evenly;
 }
 /* footer */
+
+/* responsiveness */
+@media (max-width: 991px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #navbar {
+        height: 80px;
+    }
+    .header-usp {
+        justify-content: space-around;
+    }
+    .navbar-links-right, .navbar-links-left li {
+        display: none;
+    }
+    .div-navbar-links {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .div-occasions {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .occasion-card {
+        margin-bottom: 45px;
+    }
+    .occasion-card:last-of-type {
+        margin-bottom: 0;
+    }
+    .line-long {
+        width: 80%;
+    }
+    .div-how-it-works {
+        flex-direction: column;
+        align-items: center;
+    }
+    .preview-card {
+        margin-bottom: 55px;
+    }
+    .div-steps {
+        align-items: center;
+    }
+    .div-steps ol {
+        text-align: center;
+        list-style-position: inside;
+    }
+    .div-summary {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .div-summary.mb-65 {
+        margin-bottom: 0;
+    }
+    .summary-card {
+        margin: 0 20px 40px 20px;
+    }
+}
+@media (max-width: 600px) {
+    .header-usp {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 65px 0;
+    }
+    .usp {
+        margin: 20px;
+    }
+    .preview-card {
+        width: 300px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-product-review {
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-how-it-works.container {
+        padding: 0;
+    }
+}
+@media (max-width: 425px) {
+    .h1-header {
+        font-size: 4.25rem;
+    }
+}
+/* responsiveness */
