@@ -453,7 +453,7 @@ footer {
         padding-right: 40px;
     }
     #navbar {
-        height: 80px;
+        height: 60px;
     }
     .header-usp {
         -ms-flex-pack: distribute;
@@ -465,6 +465,9 @@ footer {
     .div-navbar-links {
         padding-left: 40px;
         padding-right: 40px;
+    }
+    .header-content, .section-how-it-works, footer {
+        background-attachment: scroll;
     }
 }
 
