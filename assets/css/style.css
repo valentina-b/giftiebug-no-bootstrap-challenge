@@ -110,6 +110,7 @@ h2 {
 .navbar-links-left, .navbar-links-right {
     font-size: 0.875rem;
     display: flex;
+    align-items: center;
 }
 
 .navbar-links-left li>a, .navbar-links-right li>a {
@@ -220,7 +221,7 @@ h2 {
     width: 70%;
 }
 
-.occasion-card p {
+.occasion-card p, .summary-card p {
     font-size: 0.875rem;
     text-align: center;
 }
@@ -444,6 +445,12 @@ footer {
 @media (max-width: 425px) {
     .h1-heading {
         font-size: 4.25rem;
+    }
+    body {
+        font-size: 18px;
+    }
+    .usp {
+        width: 160px;
     }
 }
 /* responsiveness */
