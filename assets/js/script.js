@@ -7,5 +7,16 @@ burgerMenu.addEventListener('click', openBurgerMenu);
 function openBurgerMenu() {
     burgerMenuTop.classList.toggle('top-burger-menu-transform');
     burgerMenuLinks.classList.toggle('display-block-slide');
-    console.log(burgerMenuLinks);
+}
+
+const burgerMenuLinkArr = document.querySelectorAll('.burger-menu-link')
+
+for (let burgerMenuLinkArrLink of burgerMenuLinkArr) {
+    burgerMenuLinkArrLink.addEventListener('click', closeBurgerMenu);
+    console.log(burgerMenuLinkArrLink)
+}
+
+function closeBurgerMenu() {
+    burgerMenuLinks.classList.toggle('display-block-slide');
+    burgerMenuTop.classList.toggle('top-burger-menu-transform');
 }
