@@ -13,7 +13,6 @@ const burgerMenuLinkArr = document.querySelectorAll('.burger-menu-link')
 
 for (let burgerMenuLinkArrLink of burgerMenuLinkArr) {
     burgerMenuLinkArrLink.addEventListener('click', closeBurgerMenu);
-    console.log(burgerMenuLinkArrLink)
 }
 
 function closeBurgerMenu() {
