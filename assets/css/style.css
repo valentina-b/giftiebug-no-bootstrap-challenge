@@ -97,6 +97,7 @@ h2 {
 
 .modal-p {
     margin-top: 25px;
+    margin-bottom: 25px;
     width: 260px;
 }
 
@@ -735,6 +736,9 @@ footer {
     }
     .usp {
         width: 160px;
+    }
+    .modal-content {
+        margin: 30% auto;
     }
 }
 /* responsiveness */
