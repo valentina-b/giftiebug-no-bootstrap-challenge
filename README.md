@@ -64,7 +64,7 @@ There were 5 major lessons I've learned through this no-bootstrap challenge:
 5. How to make SIMPLE ANIMATIONS with CSS and JS
 - I also animated the burger menu when users click on it by using transition and transform CSS properties in combination with a javaScript event listener
 
-The reason why I'm sharing my learning above is to show that there is no one, the best way to learn to code. I've already built
+The reason why I'm sharing my learnings above is to show that there is no one, the best way to learn to code. I've already built
 several fully functioning websites, including the [e-commerce web app ECOSiO](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics)
 with test purchases, loyalty programme, registration function, admin blog feature, etc. - and yet I've just learned what flexbox actually is.
 Depending on the curriculum one follows, some things are learned sooner, some later.
