@@ -27,7 +27,7 @@ Additionally, I have also used the following platforms to help me shape the webs
 1. [Gitpod](https://gitpod.io/) - for writing, editing and live previewing the code during the creation process
 1. [GitHub](https://github.com/) - for hosting the project's repository and creating a preview link on GitHug pages
 1. [Google Fonts](https://fonts.google.com/) - for selecting the fonts and implementing them into the HTML code
-1. [Figma](https://www.figma.com/) - for creating wireframes and designs
+1. [Figma](https://www.figma.com/) - for creating wireframes, designs and icons
 
 ## Testing
 
@@ -62,9 +62,9 @@ There were 5 major lessons I've learned through this no-bootstrap challenge:
 - this time I coded the present-looking-like burger menu myself
 
 5. How to make SIMPLE ANIMATIONS with CSS and JS
-- I also animated the burger menu when users click on it by using transition and transform css properties in combination with a js event listener
+- I also animated the burger menu when users click on it by using transition and transform CSS properties in combination with a javaScript event listener
 
-The reason why I'm sharing my learning above is to show that there is no one, best way to learn to code. I've already built
+The reason why I'm sharing my learning above is to show that there is no one, the best way to learn to code. I've already built
 several fully functioning websites, including the [e-commerce web app ECOSiO](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics)
 with test purchases, loyalty programme, registration function, admin blog feature, etc. - and yet I've just learned what flexbox actually is.
 Depending on the curriculum one follows, some things are learned sooner, some later.
